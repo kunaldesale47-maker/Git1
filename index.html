@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Modern College of Engineering Clubs and Student Engagement Portal" />
+  <title>MCOE Clubs & Student Engagement Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav-shell">
+    <a class="identity" href="#home" aria-label="MCOE home"><span class="seal">M</span><span><b>MODERN COLLEGE OF ENGINEERING</b><small>Clubs &amp; Student Engagement Portal</small></span></a>
+    <button class="mobile-menu" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links"><a class="selected" href="#home">Home</a><a href="#clubs">Clubs</a><a href="#chapters">Chapters</a><a href="#activities">Activities &amp; Cells</a><a href="#programs">Programs</a><a href="#orientations">Orientations</a><a href="#announcements">Announcements</a><a href="#gallery">Gallery</a></nav>
+    <div class="nav-actions"><button class="search-icon" aria-label="Search">⌕</button><a class="login" href="#login">Login</a><a class="signup" href="#signup">Sign Up</a></div>
+  </header>
+  <main id="home">
+    <section class="hero">
+      <div class="campus-image" aria-hidden="true"></div><div class="campus-wash"></div>
+      <div class="hero-inner page-width">
+        <p class="eyebrow">Explore <i>•</i> Participate <i>•</i> Grow</p>
+        <h1>Be More<br />Than a <span>Student.</span></h1>
+        <p class="lead">Discover clubs, student chapters, programs and activities<br class="desktop-only" /> and create unforgettable experiences at MCOE, Pune.</p>
+        <form class="main-search" id="portal-search"><label class="visually-hidden" for="portal-query">Search portal</label><span>⌕</span><input id="portal-query" type="search" placeholder="Search clubs, chapters, programs, activities..." /><button>Search</button></form>
+        <p class="query-message" id="query-message" aria-live="polite"></p>
+        <div class="stats"><div><span class="stat-symbol">♣</span><p><b>Student Clubs</b> <small>Explore communities</small></p></div><div><span class="stat-symbol">◈</span><p><b>Student Chapters</b> <small>Professional networks</small></p></div><div><span class="stat-symbol">✦</span><p><b>Activities &amp; Cells</b> <small>Engage beyond class</small></p></div><div><span class="stat-symbol trophy">♜</span><p><b>Programs &amp; Events</b> <small>Discover opportunities</small></p></div></div>
+      </div>
+    </section>
+    <section class="interest-box page-width"><h2>Explore by Interest</h2><div class="interest-row" id="interest-row"></div></section>
+    <section class="content-layout page-width">
+      <div class="content-main">
+        <div class="section-bar"><div><p class="section-label">Discover and participate</p><h2 id="orientations">Upcoming Events</h2></div><a href="#orientations">View All&nbsp; →</a></div><div class="event-row" id="orientation-cards"></div>
+        <div class="section-bar programs-bar"><div><p class="section-label">Campus experiences</p><h2 id="programs">Upcoming Programs</h2></div><a href="#programs">View All&nbsp; →</a></div><div class="event-row" id="program-cards"></div>
+        <div class="section-bar club-bar"><div><p class="section-label">Find your community</p><h2 id="clubs">Featured Student Clubs</h2></div><a href="#clubs">View All Clubs&nbsp; →</a></div><div class="club-row" id="club-grid"></div>
+      </div>
+      <aside class="side-rail">
+        <section class="rail-card" id="announcements"><div class="rail-heading"><h2><span class="blue-icon">⚑</span> Latest Announcements</h2><a href="#announcements">View All&nbsp; →</a></div><div id="announcements-list"></div></section>
+        <section class="rail-card achievement-card" id="achievements"><div class="rail-heading"><h2><span class="gold-icon">♜</span> Recent Achievements</h2><a href="#achievements">View All&nbsp; →</a></div><div id="achievements-list"></div></section>
+      </aside>
+    </section>
+    <section class="community-section page-width" id="chapters"><div class="section-bar"><div><p class="section-label">Professional communities</p><h2>Student Chapters</h2><p class="section-description">Connect with professional communities, technical organizations and student networks.</p></div><a href="#chapters">View All Chapters&nbsp; →</a></div><div class="community-row" id="chapter-grid"></div></section>
+    <section class="community-section page-width" id="activities"><div class="section-bar"><div><p class="section-label">Engage. Contribute. Grow.</p><h2>Student Activities &amp; Cells</h2><p class="section-description">Campus spaces for leadership, service, wellbeing, arts and sport.</p></div><a href="#activities">View All&nbsp; →</a></div><div class="community-row activity-row" id="activity-grid"></div></section>
+  </main>
+  <footer><div class="page-width footer-grid"><div><b>MCOE Clubs &amp; Student Engagement Portal</b><p>Supporting meaningful student communities, participation and campus engagement.</p></div><div><h3>Explore</h3><a href="#clubs">Clubs</a><a href="#chapters">Chapters</a><a href="#activities">Activities</a><a href="#programs">Programs</a></div><div><h3>Student</h3><a href="#login">Login</a><a href="#clubs">My Clubs</a><a href="#programs">Registrations</a><a href="#profile">Profile</a></div><div><h3>College</h3><a href="#official">Official Website</a><a href="#about">About CEP</a><a href="#contact">Contact</a></div></div><div class="footer-note page-width">Club information may be sourced from the official college website and may be supplemented by authorized club administrators.</div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
